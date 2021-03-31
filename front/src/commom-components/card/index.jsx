@@ -1,15 +1,27 @@
 import React from "react";
 import style from "./index.module.css";
 
-function Card({ topImage, centerImage, title, description, bottomText }) {
+function Card({
+  topImage,
+  centerImage,
+  title,
+  description,
+  bottomText,
+  className,
+  marginBottom,
+}) {
   return (
     <div className={style.mainContainer}>
-      <div className={style.container}>
-        <div className={style.topDiv}>
+      <div className={`${style.container} ${marginBottom}`}>
+        <div className={`${style.topDiv} ${style.image}`}>
           <img src={topImage} alt="" />
-          <div className={style.meStyle}>
-            <img src={centerImage} alt="" className={style.me} />
-          </div>
+          {centerImage === "" ? (
+            ""
+          ) : (
+            <div className={style.meStyle}>
+              <img src={centerImage} alt="" className={style.me} />
+            </div>
+          )}
         </div>
         <div className={style.text}>
           <div className={style.containerTitle}>
@@ -21,7 +33,7 @@ function Card({ topImage, centerImage, title, description, bottomText }) {
         </div>
         <div className={style.teste}>
           <div className={style.bottom}>
-            <p>{bottomText}</p>
+            <p className={style.bottomText}>{bottomText}</p>
           </div>
         </div>
       </div>
