@@ -1,0 +1,141 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #313131;
+  font-family: RobotoRegular;
+  font-size: 50px;
+  margin-bottom: 60px;
+  margin-top: 150px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu main";
+  box-shadow: -4px 1px 19px 7px rgba(0, 0, 0, 0.25);
+  height: 450px;
+  width: 80%;
+  padding-bottom: 50px;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  grid-area: menu;
+}
+
+.teste {
+  font-size: 30px;
+  grid-area: header;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-family: RobotoRegular;
+}
+
+.image {
+  display: flex;
+  width: 100%;
+  grid-area: main;
+  align-items: center;
+  justify-content: center;
+}
+
+.image img {
+  height: 330px;
+  width: 380px;
+}
+
+input[type="text"]:focus,
+input[type="text"]:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+input {
+  border-radius: 3px;
+  height: 10px;
+}
+
+textarea:focus,
+textarea:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+textarea {
+  width: 80%;
+  background: none;
+  border: none;
+  border: solid 1px #c4c4c4;
+  color: #000000;
+  font-size: 20px;
+  height: 50px;
+  margin-bottom: 15px;
+  margin-left: 50px;
+}
+
+input {
+  width: 80%;
+  background: none;
+  border: none;
+  border: solid 1px #c4c4c4;
+  color: #000000;
+  font-size: 20px;
+  height: 35px;
+  margin-bottom: 15px;
+  margin-left: 50px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #5e5e5e;
+  margin: 0 0 10px 50px;
+}
+
+.button {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    grid-template-areas:
+      "header header  "
+      "menu menu  ";
+  }
+  .image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  input,
+  textarea,
+  label {
+    margin-left: 0px;
+    align-items: flex-end;
+  }
+
+  .fields {
+    align-items: center;
+  }
+
+  .teste {
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
