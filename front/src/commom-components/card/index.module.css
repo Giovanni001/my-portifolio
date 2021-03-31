@@ -1,0 +1,79 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 342px;
+  height: 412px;
+  box-shadow: -4px 1px 19px 7px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.topDiv {
+  height: 250px;
+}
+
+.me {
+  width: 150px;
+  height: 160px;
+}
+
+.meStyle {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  top: -80px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.containerTitle {
+  margin-bottom: 15px;
+}
+
+.containerDescription {
+  text-align: center;
+}
+
+.title {
+  font-family: Roboto;
+  font-weight: 500;
+  color: #313131;
+  font-size: 30px;
+}
+
+.description {
+  font-family: Roboto;
+  font-weight: 500;
+  color: #737373;
+  font-size: 18px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-weight: 500;
+  color: white;
+  height: 30px;
+  background: #4404ac;
+}
+
+.container .teste {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
