@@ -7,9 +7,6 @@ import style from "./index.module.css";
 function AboutMe() {
   return (
     <>
-      <div className={style.aboutMe}>
-        <h1>Quem sou eu</h1>
-      </div>
       <div className={style.container}>
         <img className={style.image} src={mainImage} alt="" />
         <div className={style.containerImage}>
