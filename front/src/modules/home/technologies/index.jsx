@@ -20,7 +20,7 @@ function Technologies() {
   return (
     <>
       <div className={style.title}>
-        <h1>Tecnologias</h1>
+        <div>Tecnologias</div>
       </div>
 
       <div className={style.container}>
