@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.containerImage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  top: -80px;
+}
+
+.image {
+  height: 200px;
+  width: 100%;
+}
+
+.me {
+  height: 200px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #313131;
+  position: relative;
+  top: -65px;
+}
+
+.descriptionStyle {
+  color: #737373;
+  position: relative;
+  top: -50px;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.containerPresentationLetter {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.presentationLetter {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  box-shadow: -4px 1px 19px 7px rgba(0, 0, 0, 0.25);
+  width: 80%;
+}
+
+.hr {
+  width: 75%;
+  padding-left: 20px;
+}
+
+.styleHr {
+  width: 100%;
+  color: black;
+}
+
+.letterTitle {
+  color: #000000;
+  font-weight: 650;
+  padding: 20px 0 0 20px;
+}
+
+.letterText {
+  padding: 0 20px 30px 20px;
+  text-align: justify;
+}
+.data {
+  padding-left: 20px;
+  color: #7e7e7e;
+  margin-bottom: 20px;
+}
+
+.bottomText {
+  padding: 0 0 30px 20px;
+}
+
+.bottomTextStyle {
+  color: #000000;
+  font-weight: 700;
+}
+
+.hireMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: #4404ac;
+  width: 100%;
+}
+
+.hireMeStyle {
+  color: white;
+  font-weight: 650;
+}
