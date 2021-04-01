@@ -1,0 +1,132 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  color: white;
+  list-style: none;
+  font-family: Roboto;
+  padding-right: 12px;
+  cursor: pointer;
+}
+
+.leftSide ul li::after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #0db2ff;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.leftSide ul li:after {
+  transform-origin: 0% 50%;
+}
+
+.leftSide ul li:hover:after {
+  transform: scaleX(1);
+}
+
+.itensUl {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70px;
+  background-color: #2a2a2a;
+}
+
+.sideNave {
+  display: none;
+}
+
+.menuToggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+}
+
+.one,
+.two,
+.three {
+  background-color: rgb(255, 255, 255);
+  height: 5px;
+  width: 100%;
+  margin: 6px auto;
+  transition-duration: 0.3s;
+}
+
+.closeMenuToggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.closeMenuToggle .one {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.closeMenuToggle .two {
+  opacity: 0;
+}
+
+.closeMenuToggle .three {
+  transform: rotate(-45deg) translate(8px, -9px);
+}
+
+.sideNavMenuToggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2a2a2a;
+  padding-top: 70px;
+  margin-top: 70px;
+}
+
+.sideNavMenuToggle a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #0db2ff;
+  display: block;
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 850px) {
+  .leftSide {
+    display: none;
+  }
+  .navItems {
+    display: none;
+  }
+  .containerMenuToggle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+    background-color: #2a2a2a;
+  }
+  .menuToggle {
+    display: block;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .closeMenuToggle {
+    display: none;
+  }
+
+  .sideNavMenuToggle {
+    display: none;
+  }
+}
