@@ -1,0 +1,39 @@
+.container {
+  height: 280px;
+  background-color: #5b5b5b;
+  position: relative;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 600;
+  padding-top: 30px;
+}
+
+.topDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+
+.topDiv img {
+  margin-left: 15px;
+}
+
+.bottomDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a2a;
+  color: #bdbdbd;
+  font-size: 18px;
+  height: 70px;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
