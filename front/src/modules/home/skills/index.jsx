@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Circle from "../../../commom-components/circle";
 import style from "./index.module.css";
 
@@ -8,16 +8,32 @@ import Communication from "../../../images/skills/communication.png";
 import Design from "../../../images/skills/design.png";
 import Office from "../../../images/skills/office.png";
 import Curiosity from "../../../images/skills/curiosity.png";
+import Modal from "../../../commom-components/modal";
 
 function Skills() {
-  const images = [
-    { image: English, text: "Inglês" },
-    { image: Agility, text: "Metodologias Ágeis" },
-    { image: Communication, text: "Comunicativo" },
-    { image: Design, text: "Design" },
-    { image: Office, text: "Pacote Office" },
-    { image: Curiosity, text: "Curioso" },
+  const [isModalVisible, setIsModalVisible] = useState(null);
+
+  const showModal = (index) => {
+    setIsModalVisible(index);
+  };
+
+  const handleOk = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
+
+  const skills = [
+    { image: English, text: "Inglês", message: "Ingles é top" },
+    { image: Agility, text: "Metodologias Ágeis", message: "a" },
+    { image: Communication, text: "Comunicativo", message: "v" },
+    { image: Design, text: "Design", message: "p" },
+    { image: Office, text: "Pacote Office", message: "Ing" },
+    { image: Curiosity, text: "Curioso", message: "top" },
   ];
+
   return (
     <>
       <div className={style.title}>
@@ -25,9 +41,24 @@ function Skills() {
       </div>
 
       <div className={style.container}>
-        {images.map((e) => (
-          <Circle image={e.image} text={e.text} />
-        ))}
+        {skills.map(({ image, text, message }, index) => {
+          return (
+            <div>
+              <Circle
+                image={image}
+                text={text}
+                onClick={() => showModal(index)}
+              />
+              <Modal
+                visible={isModalVisible === index}
+                onOk={handleOk}
+                onCancel={handleCancel}
+              >
+                {message}
+              </Modal>
+            </div>
+          );
+        })}
       </div>
     </>
   );
