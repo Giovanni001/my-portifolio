@@ -6,7 +6,7 @@ import style from "./index.module.css";
 
 function AboutMe() {
   return (
-    <>
+    <div id="whoAmI">
       <div className={style.container}>
         <img className={style.image} src={mainImage} alt="" />
         <div className={style.containerImage}>
@@ -47,7 +47,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
