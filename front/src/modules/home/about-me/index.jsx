@@ -36,6 +36,19 @@ function AboutMe() {
               mudou.Estou sempre evoluindo e aprendendo a cada dia mais seja com
               meus acertos ou com meus erros.
             </p>
+            <p className={style.letterTitle}>MEU PROPÓSITO</p>
+            <div className={style.hr}>
+              <hr className={style.styleHr} />
+            </div>
+            <p className={style.letterText}>
+              Olá, Me chamo Giovanni Manganotti, tenho 20 anos e moro em
+              Jundiaí. Sou um jovem estudante na area de Tecnologia, atualmente
+              cursando Analise e Desenvolvimento de Sistemas na Fatec de
+              Jundiaí. Desde de pequeno sempre fui curioso, sempre buscando
+              aprender coisas novas cada vez mais e mais, e ao crescer isso nao
+              mudou.Estou sempre evoluindo e aprendendo a cada dia mais seja com
+              meus acertos ou com meus erros.
+            </p>
             <div className={style.bottomText}>
               <p className={style.bottomTextStyle}>
                 Estou em busca de uma oportunidade, você poderia me judar?
