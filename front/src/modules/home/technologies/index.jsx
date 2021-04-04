@@ -18,17 +18,19 @@ function Technologies() {
   ];
 
   return (
-    <>
+    <div id="habilities">
       <div className={style.title}>
-        <div>Tecnologias</div>
+        <h2>
+          <span>Habilidades Técnicas</span>
+        </h2>
       </div>
 
       <div className={style.container}>
-        {technologies.map((e) => (
-          <Circle image={e.image} text={e.text} />
+        {technologies.map((e, index) => (
+          <Circle key={index} image={e.image} text={e.text} />
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
