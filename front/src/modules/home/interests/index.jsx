@@ -7,6 +7,7 @@ import Image2 from "../../../images/interests/image2.png";
 import Image3 from "../../../images/interests/image3.png";
 
 function Interests() {
+  console.log("%c Olá!", "color: red; font-size: 30px;");
   const card = [
     {
       topImage: Image1,
@@ -34,13 +35,16 @@ function Interests() {
     },
   ];
   return (
-    <>
+    <div id="interests">
       <div className={style.title}>
-        <p>Interesses</p>
+        <h2>
+          <span>Interesses</span>
+        </h2>
       </div>
       <div className={style.container}>
-        {card.map((e) => (
+        {card.map((e, index) => (
           <Card
+            key={index}
             topImage={e.topImage}
             centerImage={e.centerImage}
             title={e.title}
@@ -51,7 +55,7 @@ function Interests() {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
