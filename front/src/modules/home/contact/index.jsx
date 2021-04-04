@@ -6,21 +6,25 @@ import Button from "../../../commom-components/button/base-button";
 
 function Contact() {
   return (
-    <>
+    <div id="contact">
       <div className={style.title}>
-        <p>Contato</p>
+        <h2>
+          <span>Contato</span>
+        </h2>
       </div>
       <form action="">
         <div className={style.mainContainer}>
           <div className={style.container}>
-            <div className={style.teste}>Me mande um email :)</div>
+            <div className={style.teste}>Me mande uma menssagem :)</div>
             <div className={style.fields}>
-              <label htmlFor="">Nome</label>
-              <input type="text" />
-              <label htmlFor="">Email</label>
-              <input type="text" />
-              <label htmlFor="">Mensagem</label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <div className={style.containerFields}>
+                <label htmlFor="">Nome</label>
+                <input type="text" />
+                <label htmlFor="">Email</label>
+                <input type="text" />
+                <label htmlFor="">Mensagem</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </div>
             </div>
             <div className={style.image}>
               <img src={ContactImage} alt="" />
@@ -31,7 +35,7 @@ function Contact() {
           </div>
         </div>
       </form>
-    </>
+    </div>
   );
 }
 
