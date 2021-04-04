@@ -12,7 +12,7 @@ function Card({
 }) {
   return (
     <div className={style.mainContainer}>
-      <div className={`${style.container} ${marginBottom}`}>
+      <div className={`${style.container} ${marginBottom} ${className}`}>
         <div className={`${style.topDiv} ${style.image}`}>
           <img src={topImage} alt="" />
           {centerImage === "" ? (
