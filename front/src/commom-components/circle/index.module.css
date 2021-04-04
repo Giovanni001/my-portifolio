@@ -15,8 +15,8 @@
 }
 
 .text {
-  font-family: Roboto;
-  font-weight: 600px;
+  font-family: RobotoCondensedBold;
+
   color: #7c7c7c;
   font-size: 22px;
   animation: text 1s linear infinite;
