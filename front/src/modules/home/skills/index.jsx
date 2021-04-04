@@ -35,15 +35,17 @@ function Skills() {
   ];
 
   return (
-    <>
+    <div id="skills">
       <div className={style.title}>
-        <p>Competências</p>
+        <h2>
+          <span>Competências</span>
+        </h2>
       </div>
 
       <div className={style.container}>
         {skills.map(({ image, text, message }, index) => {
           return (
-            <div>
+            <div key={index}>
               <Circle
                 image={image}
                 text={text}
@@ -60,7 +62,7 @@ function Skills() {
           );
         })}
       </div>
-    </>
+    </div>
   );
 }
 
