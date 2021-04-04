@@ -17,18 +17,26 @@ function NavBar() {
   }
   return (
     <div>
-      <div className={menuToggle ? style.sideNavMenuToggle : style.sideNave}>
-        {menuItens.map(({ title, ref }) => (
-          <a onClick={() => handleShowMenuToggle()} href={ref}>
-            {title}
-          </a>
+      <div
+        className={`${menuToggle ? style.sideNavMenuToggle : style.sideNave} ${
+          style.teste
+        }`}
+      >
+        {menuItens.map(({ title, ref }, index) => (
+          <div key={index}>
+            <a onClick={() => handleShowMenuToggle()} href={ref}>
+              {title}
+            </a>
+          </div>
         ))}
       </div>
       <nav>
         <div className={style.leftSide}>
           <ul className={style.itensUl}>
-            {menuItens.map((e) => (
-              <li>{e.title}</li>
+            {menuItens.map(({ title, ref }, index) => (
+              <a key={index} href={ref}>
+                {title}
+              </a>
             ))}
           </ul>
         </div>
