@@ -8,7 +8,7 @@ function Circle({ image, text, onClick }) {
       <div className={style.divImage}>
         <img src={image} alt="" className={style.image} />
       </div>
-      <p onClick={onClick} className={style.text}>
+      <p onClick={onClick} className={style.textAnimation}>
         {text}
       </p>
     </div>
