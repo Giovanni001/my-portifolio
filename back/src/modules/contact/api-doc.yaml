@@ -1,0 +1,39 @@
+paths:
+  /contact:
+    post:
+      security:
+        - bearerAuth: []
+      tags: ['Contact']
+      summary: This endpoint is used to send a contact message
+      description:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: 'Ana Carolina'
+                email:
+                  type: string
+                  example: 'ana@gmail.com'
+                phone:
+                  type: string
+                  example: '(11) 93085-9889'
+                subject:
+                  type: string
+                  example: 'Orçamento'
+                message:
+                  type: string
+                  example: 'Olá, gostaria que entrasse em contato comigo para fazermos um orçamento!'
+               
+    responses:
+      200:
+        description: Operation performed successfully
+
+      400:
+        $ref: '#/components/errors/badRequest'
+
+      500:
+        $ref: '#/components/errors/internalServerError'
