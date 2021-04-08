@@ -19,12 +19,6 @@ module.exports = {
         'any.required': errorMessages.MESSAGES.ANY_REQUIRED,
       }),
 
-    phone: Joi.string()
-      .max(255)
-      .messages({
-        'string.max': errorMessages.MESSAGES.STRING_MAX,
-      }),
-
     subject: Joi.string()
       .max(255)
       .required()

@@ -17,17 +17,14 @@ paths:
                   example: 'Ana Carolina'
                 email:
                   type: string
-                  example: 'ana@gmail.com'
-                phone:
-                  type: string
-                  example: '(11) 93085-9889'
+                  example: 'ana@conexcode.com'
                 subject:
                   type: string
                   example: 'Orçamento'
                 message:
                   type: string
                   example: 'Olá, gostaria que entrasse em contato comigo para fazermos um orçamento!'
-               
+
     responses:
       200:
         description: Operation performed successfully

@@ -14,6 +14,10 @@ module.exports = {
         type: Sequelize.STRING(255),
         allowNull: false,
       },
+      subject: {
+        type: Sequelize.STRING(255),
+        allowNull: false,
+      },
       message: {
         type: Sequelize.STRING(500),
         allowNull: false,
