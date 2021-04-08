@@ -14,15 +14,15 @@ function Interests() {
       centerImage: "",
       title: "",
       description:
-        "Sempre tive uma enorme paixão pela área tecnologia e uma afinidade muito grande.",
-      bottomText: "Área Tecnologica",
+        "Sempre tive uma enorme paixão pela área de TI e uma afinidade muito grande.",
+      bottomText: "Tecnologia da Informação",
     },
     {
       topImage: Image2,
       centerImage: "",
       title: "",
       description:
-        "Estou sempre criando coisas, artes e sites, possuo uma certa afinidade com Desing.",
+        "Ter uma experiência como Trainee seria algo realmente incrivel e desafiador. ",
       bottomText: "Trainee",
     },
     {
@@ -30,8 +30,8 @@ function Interests() {
       centerImage: "",
       title: "",
       description:
-        "Meu primeira área, a que tenho saudades e um carinho muito grande.",
-      bottomText: "Área Administrativa",
+        "Uma área incrivel que envolve muita criatividade e muitos desafios constantes.",
+      bottomText: "Desenvolvimento Web",
     },
   ];
   return (
