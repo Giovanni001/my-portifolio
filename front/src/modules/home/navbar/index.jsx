@@ -6,9 +6,9 @@ function NavBar() {
 
   const menuItens = [
     { title: "Quem eu sou", ref: "#whoAmI" },
+    { title: "Interesses", ref: "#interests" },
     { title: "Habilidades", ref: "#habilities" },
     { title: "Competencias", ref: "#skills" },
-    { title: "Interesses", ref: "#interests" },
     { title: "Contato", ref: "#contact" },
   ];
 
@@ -16,11 +16,9 @@ function NavBar() {
     setmenuToggle((visible) => !visible);
   }
   return (
-    <div>
+    <div className="">
       <div
-        className={`${menuToggle ? style.sideNavMenuToggle : style.sideNave} ${
-          style.teste
-        }`}
+        className={`${menuToggle ? style.sideNavMenuToggle : style.sideNave}`}
       >
         {menuItens.map(({ title, ref }, index) => (
           <div key={index}>
