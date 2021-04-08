@@ -7,6 +7,38 @@
   margin: 100px 100px;
 }
 
+.mainContainerInformation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.containerInformation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.titleInformation {
+  font-family: RobotoCondensedBold;
+  font-size: 20px;
+  height: 22px;
+  margin-left: 15px;
+}
+
+.descriptionInformation {
+  font-family: RobotoCondensedRegular;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.imageInformation img {
+  width: 400px;
+  height: 275px;
+}
+
 h2 {
   margin-top: 30px;
   position: relative;
@@ -41,7 +73,7 @@ h2 span {
     "header header"
     "menu main";
   box-shadow: -4px 1px 19px 7px rgba(0, 0, 0, 0.25);
-  height: 500px;
+  height: 50%;
   width: 80%;
   padding-bottom: 50px;
   margin-bottom: 50px;
@@ -93,12 +125,12 @@ select:focus {
 
 .containerFields textarea {
   width: 80%;
+  height: 100px;
   background: none;
   border: none;
   border: solid 1px #c4c4c4;
   color: #000000;
   font-size: 20px;
-  height: 50px;
   margin-bottom: 15px;
   margin-left: 50px;
   border-radius: 3px;
@@ -137,6 +169,19 @@ select:focus {
       "menu menu  ";
   }
   .image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .mainContainerInformation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .imageInformation img {
     display: none;
   }
 }

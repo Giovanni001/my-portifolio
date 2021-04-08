@@ -1,6 +1,6 @@
 import React from "react";
 import AboutMe from "./about-me";
-import Contact from "./contact";
+import Contact from "./contact/";
 import Footer from "./footer";
 import Interests from "./interests";
 import NavBar from "./navbar";
@@ -13,9 +13,9 @@ function Home() {
     <div>
       <NavBar />
       <AboutMe />
+      <Interests />
       <Technologies />
       <Skills />
-      <Interests />
       <Contact />
       <Resume />
       <Footer />
