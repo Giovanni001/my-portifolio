@@ -4,15 +4,17 @@
 }
 
 .container {
-  width: 80%;
-  height: 400px;
+  width: 270px;
+  height: 350px;
   box-shadow: -4px 1px 19px 7px rgba(0, 0, 0, 0.25);
   position: relative;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .topDiv {
-  height: 230px;
+  display: flex;
+  justify-content: center;
+  height: 200px;
 }
 
 .me {
@@ -34,8 +36,8 @@ p {
 }
 
 .image img {
-  height: 200px;
-  width: 100%;
+  height: 180px;
+  width: 80%;
   border-radius: 10px 10px 0 0;
 }
 
@@ -79,7 +81,7 @@ p {
   color: white;
   height: 30px;
   background: #4404ac;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 5px 5px;
 }
 
 .bottomText {
@@ -93,7 +95,7 @@ p {
   border-radius: 0 0 15px 15px;
 }
 
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
   .container {
     width: 340px;
     height: 412px;
@@ -101,7 +103,7 @@ p {
     position: relative;
     border-radius: 10px;
   }
-}
+} */
 
 @media only screen and (max-width: 600px) {
   .container {
