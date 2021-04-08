@@ -47,27 +47,27 @@ function Skills() {
       image: Office,
       text: "Pacote Office",
       message:
-        "Nos dias atuais se tornou indispensavel um profissional de qualquer area não saber lidar com essas três ferramentas, ferramentas indispensaveis para muitas organizações no seu dia-a-dia. Considero que um nivel bom nessas três ferramentas.",
+        "Nos dias atuais se tornou indispensavel um profissional de qualquer area não saber lidar com essas três ferramentas, ferramentas indispensaveis para muitas organizações no seu dia-a-dia. Considero que possuo um nivel bom nessas três ferramentas.",
       title: "Word, Excel e Power-Point!",
       id: 2,
-    },
-    {
-      image: Communication,
-      text: "Comunicativo",
-      message:
-        "A base para qualquer profissional seja em qualquer area é a comunicação. Considero que tenho uma boa comunicação, sempre soube lidar muito bem com as pessoas ao meu redor e a como me expressar de forma clara e objetiva.",
-      title: "Comunicação, um pilar basico e extremamente importante!",
-      id: 3,
     },
     {
       image: English,
       text: "Inglês",
       message:
-        "Desde pequeno sempre quis aprender uma lingua nova, logo começei com o inglês, como não tinha condições para ir em uma escola particular, tive que me virar e aprender sozinho, tenho muito a aprender ainda mas, modestia parte, considero meu nivel de inglês muito bom.",
+        "Desde pequeno sempre quis aprender uma lingua nova, logo começei com o inglês, como não tinha condições para ir em uma escola particular, tive que me virar e aprender sozinho, tenho muito a aprender ainda mas considero meu nivel de inglês intermediário.",
       title: "Yes I Speak!",
       id: 4,
     },
 
+    {
+      image: Communication,
+      text: "Comunicativo",
+      message:
+        "A base para qualquer profissional seja em qualquer area é a comunicação. Considero que tenho uma boa comunicação, sempre soube lidar muito bem com as pessoas ao meu redor e a como me expressar de forma clara e objetiva.",
+      title: "Comunicação, um pilar básico e extremamente importante!",
+      id: 3,
+    },
     {
       image: Curiosity,
       text: "Curioso",
@@ -90,7 +90,12 @@ function Skills() {
         {skills.map(({ image, text, message, id, title }, index) => {
           return (
             <div key={index}>
-              <Circle image={image} text={text} onClick={() => showModal(id)} />
+              <Circle
+                image={image}
+                text={text}
+                animation
+                onClick={() => showModal(id)}
+              />
               <Modal
                 visible={isModalVisible === id}
                 onOk={handleOk}
