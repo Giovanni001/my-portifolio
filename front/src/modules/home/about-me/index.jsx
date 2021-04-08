@@ -1,10 +1,20 @@
 import React from "react";
+
 import mainImage from "../../../images/mainImage.png";
 import me from "../../../images/me/me.png";
 
 import style from "./index.module.css";
 
+const { DateTime } = require("luxon");
+
 function AboutMe() {
+  let dt = DateTime.now();
+  let f = { month: "long", day: "numeric" };
+  let date = dt.setLocale("pt-BR").toLocaleString(f); //=> 'September 14'
+  let hour = dt.hour;
+  let minute = dt.minute;
+  let year = dt.year;
+
   return (
     <div id="whoAmI">
       <div className={style.container}>
@@ -26,7 +36,9 @@ function AboutMe() {
             <div className={style.hr}>
               <hr className={style.styleHr} />
             </div>
-            <p className={style.data}>Data Atual</p>
+            <p
+              className={style.data}
+            >{`${date} de ${year} - ${hour}:${minute}`}</p>
             <p className={style.letterText}>
               Olá, Me chamo Giovanni Manganotti, tenho 20 anos e moro em
               Jundiaí. Sou um jovem estudante na area de Tecnologia, atualmente
