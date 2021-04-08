@@ -42,4 +42,8 @@
   .bottomDiv {
     text-align: center;
   }
+
+  .bottomDiv p {
+    margin: 0 15px;
+  }
 }
