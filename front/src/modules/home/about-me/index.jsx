@@ -41,21 +41,19 @@ function AboutMe() {
               <hr className={style.styleHr} />
             </div>
             <p className={style.letterText}>
-              Olá, Me chamo Giovanni Manganotti, tenho 20 anos e moro em
-              Jundiaí. Sou um jovem estudante na area de Tecnologia, atualmente
-              cursando Analise e Desenvolvimento de Sistemas na Fatec de
-              Jundiaí. Desde de pequeno sempre fui curioso, sempre buscando
-              aprender coisas novas cada vez mais e mais, e ao crescer isso nao
-              mudou.Estou sempre evoluindo e aprendendo a cada dia mais seja com
-              meus acertos ou com meus erros.
+              Tenho como propósito, ajudar o maior numero de pessoas durante a
+              minha caminhada, deixar o melhor que tenho de mim com elas para
+              que um dia elas se lembrem quem foi Giovanni Manganotti Ribeiro
+              Machado.
             </p>
             <div className={style.bottomText}>
               <p className={style.bottomTextStyle}>
-                Estou em busca de uma oportunidade, você poderia me judar?
+                Estou em busca de uma oportunidade, Posso fazer parte do seu
+                time?
               </p>
             </div>
             <div className={style.hireMe}>
-              <p className={style.hireMeStyle}>#meContrata</p>
+              <p className={style.hireMeStyle}>#emBuscaDeNovosDesafios</p>
             </div>
           </div>
         </div>
