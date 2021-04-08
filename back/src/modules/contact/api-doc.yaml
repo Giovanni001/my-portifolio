@@ -17,7 +17,7 @@ paths:
                   example: 'Ana Carolina'
                 email:
                   type: string
-                  example: 'ana@conexcode.com'
+                  example: 'ana@gmail.com'
                 subject:
                   type: string
                   example: 'Orçamento'
