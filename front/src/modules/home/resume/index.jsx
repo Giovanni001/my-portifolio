@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../../../commom-components/button/base-button";
 import { pdf } from "@react-pdf/renderer";
 
@@ -6,6 +6,8 @@ import style from "./index.module.css";
 import Pdf from "../pdf";
 
 function Resume() {
+  const [loading, setLoading] = useState(false);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -58,7 +60,9 @@ function Resume() {
     };
 
     const component = <Pdf data={data} />;
+    setLoading(true);
     const blob = await pdf(component).toBlob();
+    setLoading(false);
     const url = URL.createObjectURL(blob);
 
     window.open(url);
@@ -66,10 +70,10 @@ function Resume() {
   return (
     <div className={style.container}>
       <p className={style.title}>
-        Caso preferir, você pode apênas visualizar o meu curriculo :){" "}
+        Caso preferir, você pode visualizar o meu curriculo :)
       </p>
       <form action="" onSubmit={handleSubmit}>
-        <Button type="submit" coloor="blue" text="Gerar" />
+        <Button isLoading={loading} type="submit" coloor="blue" text="Gerar" />
       </form>
     </div>
   );
