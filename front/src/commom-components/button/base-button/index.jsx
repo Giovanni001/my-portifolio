@@ -1,9 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import Spinner from "../../spinner";
+
 import style from "./index.module.css";
 
-function Button({ text, color, className, onClick, onScroll, icon }) {
+function Button({
+  text,
+  color,
+  className,
+  onClick,
+  onScroll,
+  icon,
+  isLoading,
+}) {
   let buttonColor;
   switch (color) {
     case "blue":
@@ -21,8 +31,9 @@ function Button({ text, color, className, onClick, onScroll, icon }) {
         icon={icon}
         className={`${style.button} ${buttonColor} ${className}`}
       >
-        {icon}
-        {text}
+        {isLoading
+          ? isLoading && <Spinner className={style.spinStyle} />
+          : text || icon}
       </button>
     </div>
   );
