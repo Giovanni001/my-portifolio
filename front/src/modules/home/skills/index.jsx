@@ -12,10 +12,11 @@ import Modal from "../../../commom-components/modal";
 
 function Skills() {
   const [isModalVisible, setIsModalVisible] = useState(null);
-  const [teste, setTeste] = useState(null);
+  const [selectedSkill, setSelectedSkill] = useState({});
 
   const showModal = (id) => {
-    setIsModalVisible(id);
+    setSelectedSkill(skills.find((skill) => skill.id === id));
+    setIsModalVisible(true);
   };
 
   const handleOk = () => {
@@ -31,7 +32,7 @@ function Skills() {
       image: Agility,
       text: "Metodologias Ágeis",
       message:
-        "Um conceito muito importante que qualquer organização usar no seu dia-a-dia, tendo com mais aparição em empresas de desenvolvimento. Tenho experiência em Scrum e Kanban, tendo desenvolvido sistemas usando essas duas estratégias.",
+        "Um conceito muito importante que qualquer organização usar no seu dia a dia, tendo com mais aparição em empresas de desenvolvimento. Tenho experiência em Scrum e Kanban, tendo desenvolvido sistemas usando essas duas estratégias.",
       title: "O Segredo para qualquer projeto dar certo!",
       id: 0,
     },
@@ -39,7 +40,7 @@ function Skills() {
       image: Design,
       text: "Figma",
       message:
-        "Desde sempre me vejo no figma criando artes e outras diversas coisas. O figma foi primeira ferramente de design que eu tive contato, uma ferramenta muito completa e bem estruturada, a vale ressaltar que esse website foi prototipado inicialmente no figma ^^.",
+        "Sempre me vejo no figma criando artes e outras diversas coisas. O figma foi a primeira ferramenta de design que eu tive contato, uma ferramenta muito completa e bem estruturada, a vale ressaltar que esse website foi prototipado inicialmente no figma ^^.",
       title: "Criar, Aprender e Se Divertir!",
       id: 1,
     },
@@ -47,7 +48,7 @@ function Skills() {
       image: Office,
       text: "Pacote Office",
       message:
-        "Nos dias atuais se tornou indispensavel um profissional de qualquer area não saber lidar com essas três ferramentas, ferramentas indispensaveis para muitas organizações no seu dia-a-dia. Considero que possuo um nivel bom nessas três ferramentas.",
+        "Nos dias atuais se tornou indispensável um profissional de qualquer área não saber lidar com essas três ferramentas, ferramentas indispensaveis para muitas organizações no seu dia-a-dia. Considero que possuo um nível bom nessas três ferramentas.",
       title: "Word, Excel e Power-Point!",
       id: 2,
     },
@@ -55,7 +56,7 @@ function Skills() {
       image: English,
       text: "Inglês",
       message:
-        "Desde pequeno sempre quis aprender uma lingua nova, logo começei com o inglês, como não tinha condições para ir em uma escola particular, tive que me virar e aprender sozinho, tenho muito a aprender ainda mas considero meu nivel de inglês intermediário.",
+        "Desde pequeno sempre quis aprender uma língua nova, logo começei com o inglês, como não tinha condições para ir em uma escola particular, tive que me virar e aprender sozinho, tenho muito a aprender ainda mas considero meu nivel de inglês intermediário.",
       title: "Yes I Speak!",
       id: 4,
     },
@@ -72,7 +73,7 @@ function Skills() {
       image: Curiosity,
       text: "Curioso",
       message:
-        "Sempre fui uma pessoa muito curiosa no sentido de aprender coisas novas, estou sempre pesquizando novas ferramentas, novos cursos para realizar e novos aprendizados, seja lugares físicos ou virtuais, estou sempre acompanhando as ultimas noticias do mundo.",
+        "Sempre fui uma pessoa muito curiosa no sentido de aprender coisas novas, estou sempre pesquizando novas ferramentas, novos cursos para realizar e novos aprendizados, seja lugares físicos ou virtuais, estou sempre acompanhando as últimas notícias do mundo.",
       title: "A curiosidade atrai o leigo, e o torna um perito!",
       id: 5,
     },
@@ -87,7 +88,7 @@ function Skills() {
       </div>
 
       <div className={style.container}>
-        {skills.map(({ image, text, message, id, title }, index) => {
+        {skills.map(({ image, text, id }, index) => {
           return (
             <div key={index}>
               <Circle
@@ -96,17 +97,18 @@ function Skills() {
                 animation
                 onClick={() => showModal(id)}
               />
-              <Modal
-                visible={isModalVisible === id}
-                onOk={handleOk}
-                onCancel={handleCancel}
-                title={title}
-              >
-                {message}
-              </Modal>
             </div>
           );
         })}
+
+        <Modal
+          visible={isModalVisible}
+          onOk={handleOk}
+          onCancel={handleCancel}
+          title={selectedSkill.title}
+        >
+          {selectedSkill.message}
+        </Modal>
       </div>
     </div>
   );
