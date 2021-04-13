@@ -1,7 +1,8 @@
 const config = {
     PUBLIC_URL: process.env.PUBLIC_URL || "/",
-    API_BASE_URL: "http://localhost:4000/api",
-    oi: ""
+    API_BASE_URL: "https://www.manganotti.com.br/api",
+
+
 };
 
 export default config;
