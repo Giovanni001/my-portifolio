@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import service from "./service";
 
 import Button from "../../../commom-components/button/base-button";
-import { notification } from "antd";
-
-import style from "./index.module.css";
 
 import ContactImage from "../../../images/contact/contact.png";
 import Data from "../../../images/contact/data.png";
+
+import { notification } from "antd";
+import style from "./index.module.css";
 
 import { ReactComponent as Email } from "../../../assets/icons/email.svg";
 import { ReactComponent as Map } from "../../../assets/icons/map.svg";
@@ -18,8 +18,7 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [subject, setSuject] = useState("");
-
-  console.log(name, email, message);
+  const [loading, setLoading] = useState(false);
 
   async function handleEmailSubmit(e) {
     e.preventDefault();
@@ -31,16 +30,20 @@ function Contact() {
       message,
     };
     try {
+      setLoading(true);
       const response = await service.create(data);
       const { status } = response;
       if (status === 200) {
         openNotificationWithIcon("success");
       }
       e.target.reset();
+      setLoading(false);
       return response;
     } catch (err) {
       openNotificationWithIcon("error");
+      setLoading(false);
     }
+    setLoading(false);
   }
 
   const openNotificationWithIcon = (type) => {
@@ -53,6 +56,7 @@ function Contact() {
       duration: 6,
     });
   };
+
   return (
     <div id="contact">
       <div className={style.title}>
@@ -107,18 +111,22 @@ function Contact() {
                   name={name}
                   onChange={(e) => setName(e.target.value)}
                   required
+                  maxlength="255"
                 />
                 <label htmlFor="">Assunto</label>
                 <input
                   type="text"
                   name={subject}
                   onChange={(e) => setSuject(e.target.value)}
+                  maxlength="255"
+                  required
                 />
                 <label htmlFor="">Email</label>
                 <input
                   type="email"
                   name={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  maxlength="255"
                   required
                 />
                 <label htmlFor="">Mensagem</label>
@@ -126,6 +134,7 @@ function Contact() {
                   className={style.textArea}
                   name={message}
                   onChange={(e) => setMessage(e.target.value)}
+                  maxlength="500"
                   required
                 ></textarea>
               </div>
@@ -134,7 +143,7 @@ function Contact() {
               <img src={ContactImage} alt="" />
             </div>
             <div className={style.button}>
-              <Button text="Enviar" color="blue" />
+              <Button isLoading={loading} text="Enviar" color="blue" />
             </div>
           </div>
         </div>

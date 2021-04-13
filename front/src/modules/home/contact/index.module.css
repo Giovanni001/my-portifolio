@@ -146,6 +146,7 @@ select:focus {
   height: 35px;
   margin-bottom: 15px;
   margin-left: 50px;
+  border-radius: 3px;
 }
 
 .containerFields label {
@@ -160,6 +161,21 @@ select:focus {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+
+@media only screen and (min-width: 1340px) {
+  .containerFields {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerFields input {
+    width: 100%;
+  }
+
+  .containerFields textarea {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 900px) {
