@@ -62,3 +62,9 @@ h2 span {
     margin-top: 50px;
   }
 }
+
+@media only screen and (min-width: 1600px) {
+  .container {
+    grid-template-columns: repeat(3, 20%);
+  }
+}

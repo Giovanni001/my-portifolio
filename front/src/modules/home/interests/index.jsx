@@ -22,7 +22,7 @@ function Interests() {
       centerImage: "",
       title: "",
       description:
-        "Ter uma experiência como Trainee seria algo realmente incrivel e desafiador. ",
+        "Ter uma experiência como Trainee seria algo realmente incrível e desafiador. ",
       bottomText: "Trainee",
     },
     {
@@ -30,7 +30,7 @@ function Interests() {
       centerImage: "",
       title: "",
       description:
-        "Uma área incrivel que envolve muita criatividade e muitos desafios constantes.",
+        "Uma área incrível que envolve muita criatividade e muitos desafios constantes.",
       bottomText: "Desenvolvimento Web",
     },
   ];
