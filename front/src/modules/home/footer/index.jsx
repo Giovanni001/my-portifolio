@@ -28,7 +28,7 @@ function Footer() {
       <div className={style.topDiv}>
         {socialMidias.map(({ name, alt, link }, index) => (
           <a key={index} href={link} target="_blank" rel="noreferrer">
-            <img src={name} alt={alt} />
+            <img src={name} alt={alt} className={style.socialMidiaStyle} />
           </a>
         ))}
       </div>

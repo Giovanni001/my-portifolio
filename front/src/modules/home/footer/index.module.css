@@ -38,6 +38,11 @@
   left: 0;
 }
 
+.socialMidiaStyle {
+  width: 48px;
+  height: 48px;
+}
+
 @media only screen and (max-width: 600px) {
   .bottomDiv {
     text-align: center;
