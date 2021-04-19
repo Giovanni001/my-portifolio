@@ -15,7 +15,7 @@ function Resume() {
       name: "Giovanni Manganotti Ribeiro Machado",
       age: "20",
       professionalObjectives:
-        "Busco enfrentar os mais diversos desafios e crescer com eles, estou sempre em constante aprendizado, procuro sempre dar o meu melhor, ajudando a empresa e os colegas de trabalho",
+        "Busco enfrentar os mais diversos desafios e crescer com eles, estou sempre em constante aprendizado, procuro sempre dar o meu melhor, ajudando a empresa e os colegas de trabalho.",
       habilities: {
         one: "Git",
         two: "Scrum, Kanban",
