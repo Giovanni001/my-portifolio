@@ -1,0 +1,41 @@
+.container {
+  margin: 80px 0;
+}
+
+.mainTitleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainTitle {
+  font-family: RobotoCondensedBold;
+  color: #313131;
+  font-size: 30px;
+  text-align: center;
+}
+
+.containerTitle {
+  display: flex;
+  justify-content: center;
+  font-family: RobotoCondensedRegular;
+  font-size: 20px;
+  text-align: center;
+}
+
+.devToolContainer {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+.text {
+  font-family: RobotoCondensedBold;
+  font-size: 20px;
+}
+
+.textCommands {
+  font-family: RobotoCondensedBold;
+  font-size: 20px;
+  color: #0db2ff;
+}
