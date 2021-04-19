@@ -95,16 +95,6 @@ p {
   border-radius: 0 0 15px 15px;
 }
 
-/* @media only screen and (max-width: 800px) {
-  .container {
-    width: 340px;
-    height: 412px;
-    box-shadow: -4px 1px 19px 7px rgba(0, 0, 0, 0.25);
-    position: relative;
-    border-radius: 10px;
-  }
-} */
-
 @media only screen and (max-width: 600px) {
   .container {
     width: 240px;
