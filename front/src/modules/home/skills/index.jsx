@@ -65,7 +65,7 @@ function Skills() {
       image: Communication,
       text: "Comunicativo",
       message:
-        "A base para qualquer profissional seja em qualquer area é a comunicação. Considero que tenho uma boa comunicação, sempre soube lidar muito bem com as pessoas ao meu redor e a como me expressar de forma clara e objetiva.",
+        "A base para qualquer profissional seja em qualquer área é a comunicação. Considero que tenho uma boa comunicação, sempre soube lidar muito bem com as pessoas ao meu redor e a como me expressar de forma clara e objetiva.",
       title: "Comunicação, um pilar básico e extremamente importante!",
       id: 3,
     },
