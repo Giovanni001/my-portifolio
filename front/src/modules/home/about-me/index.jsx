@@ -1,6 +1,7 @@
 import React from "react";
 
 import mainImage from "../../../images/mainImage.png";
+
 import me from "../../../images/me/me.png";
 
 import style from "./index.module.css";
@@ -42,10 +43,10 @@ function AboutMe() {
             >{`${date} de ${year} - ${hour}:${minute}`}</p>
             <p className={style.letterText1}>
               Olá, Me chamo Giovanni Manganotti, tenho 20 anos e moro em
-              Jundiaí. Sou um jovem estudante na area de Tecnologia, atualmente
+              Jundiaí. Sou um jovem estudante na área de Tecnologia, atualmente
               cursando Análise e Desenvolvimento de Sistemas na Fatec de
               Jundiaí. Desde de pequeno sempre fui uma pessoa curiosa, sempre
-              buscando aprender coisas novas e buscar desafios contantes.
+              buscando aprender coisas novas e desafios contantes.
             </p>
             <p className={style.letterText2}>
               O meu maior diferencial é a minha persistência e a minha
