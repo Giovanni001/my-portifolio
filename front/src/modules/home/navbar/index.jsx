@@ -8,7 +8,7 @@ function NavBar() {
     { title: "Quem eu sou", ref: "#whoAmI" },
     { title: "Interesses", ref: "#interests" },
     { title: "Habilidades", ref: "#habilities" },
-    { title: "Competencias", ref: "#skills" },
+    { title: "Competências", ref: "#skills" },
     { title: "Contato", ref: "#contact" },
   ];
 
