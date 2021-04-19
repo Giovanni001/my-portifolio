@@ -13,11 +13,13 @@ function RoundButton({ icon }) {
   function handleScrollButtonToTop() {
     window.addEventListener("scroll", () => {
       const verticalScroll = window.scrollY;
+
       verticalScroll > 400
         ? setScrollButtonToTop(true)
         : setScrollButtonToTop(false);
     });
   }
+
   const roundButton = (
     <Button
       icon={icon}
