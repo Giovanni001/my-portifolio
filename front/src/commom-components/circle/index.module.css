@@ -7,6 +7,9 @@
 
 .divImage {
   margin-bottom: 20px;
+  border: solid 0px;
+  box-shadow: -4px 1px 19px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 6em;
 }
 
 .image {
