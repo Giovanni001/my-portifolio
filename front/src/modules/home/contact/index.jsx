@@ -50,8 +50,8 @@ function Contact() {
     notification[type]({
       message: `${
         type === "success"
-          ? "Menssagem, enviada com sucesso!"
-          : "Não foi possivel enviar a menssagem!"
+          ? "Menssagem enviada com sucesso!"
+          : "Não foi possivel enviar a mensagem!"
       }`,
       duration: 6,
     });
@@ -78,10 +78,8 @@ function Contact() {
           <div className={style.containerInformation}>
             <Map />
             <div>
-              <p className={style.titleInformation}>Endereço</p>
-              <p className={style.descriptionInformation}>
-                Rua Sargento Arnaldo Mangile
-              </p>
+              <p className={style.titleInformation}>Cidade</p>
+              <p className={style.descriptionInformation}>Jundiaí - SP</p>
             </div>
           </div>
           <div className={style.containerInformation}>
@@ -102,7 +100,7 @@ function Contact() {
       <form onSubmit={(e) => handleEmailSubmit(e)}>
         <div className={style.mainContainer}>
           <div className={style.container}>
-            <div className={style.teste}>Me mande uma menssagem :)</div>
+            <div className={style.teste}>Me mande uma mensagem :)</div>
             <div className={style.fields}>
               <div className={style.containerFields}>
                 <label htmlFor="">Nome</label>
@@ -111,14 +109,14 @@ function Contact() {
                   name={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  maxlength="255"
+                  maxLength="255"
                 />
                 <label htmlFor="">Assunto</label>
                 <input
                   type="text"
                   name={subject}
                   onChange={(e) => setSuject(e.target.value)}
-                  maxlength="255"
+                  maxLength="255"
                   required
                 />
                 <label htmlFor="">Email</label>
@@ -126,7 +124,7 @@ function Contact() {
                   type="email"
                   name={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  maxlength="255"
+                  maxLength="255"
                   required
                 />
                 <label htmlFor="">Mensagem</label>
@@ -134,7 +132,7 @@ function Contact() {
                   className={style.textArea}
                   name={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  maxlength="500"
+                  maxLength="500"
                   required
                 ></textarea>
               </div>
