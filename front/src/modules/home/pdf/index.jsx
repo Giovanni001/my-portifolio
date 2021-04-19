@@ -19,22 +19,28 @@ function Pdf({ data }) {
               {data.professionalObjectives}
             </Text>
           </View>
-          {/* Professional 1 Historic  */}
+          {/* Education Historic 1 */}
           <View style={styles.margimBottomDiv}>
-            <Text style={styles.title}>Historico Profissional </Text>
+            <Text style={styles.title}>Histório Escolar </Text>
             <Text style={styles.description1}>
-              {data.professionalHistoric1.occupation}
+              {data.educationHistoric1.institutionName}
             </Text>
             <Text style={styles.description2}>
-              {data.professionalHistoric1.companyName}
-            </Text>
-            <Text style={styles.description2}>
-              {data.professionalHistoric1.description}
+              {data.educationHistoric1.description}
             </Text>
           </View>
-          {/*  Professional 2 Historic */}
+          {/* Education Historic 2 */}
           <View style={styles.margimBottomDiv}>
-            <Text style={styles.title}>Historio Profissional </Text>
+            <Text style={styles.description1}>
+              {data.educationHistoric2.institutionName}
+            </Text>
+            <Text style={styles.description2}>
+              {data.educationHistoric2.description}
+            </Text>
+          </View>
+          {/*  Professional 1 Historic */}
+          <View style={styles.margimBottomDiv}>
+            <Text style={styles.title}>Histório Profissional </Text>
             <Text style={styles.description1}>
               {data.professionalHistoric2.occupation}
             </Text>
@@ -45,29 +51,21 @@ function Pdf({ data }) {
               {data.professionalHistoric2.description}
             </Text>
           </View>
-          {/* Education Historic 1 */}
+          {/* Professional 2 Historic  */}
           <View style={styles.margimBottomDiv}>
-            <Text style={styles.title}>Historio Escolar </Text>
             <Text style={styles.description1}>
-              {data.educationHistoric1.institutionName}
+              {data.professionalHistoric1.occupation}
             </Text>
             <Text style={styles.description2}>
-              {data.educationHistoric1.description}
-            </Text>
-          </View>
-          {/* Education Historic 2 */}
-          <View style={styles.margimBottomDiv}>
-            <Text style={styles.title}>Historio Escolar </Text>
-            <Text style={styles.description1}>
-              {data.educationHistoric2.institutionName}
+              {data.professionalHistoric1.companyName}
             </Text>
             <Text style={styles.description2}>
-              {data.educationHistoric2.description}
+              {data.professionalHistoric1.description}
             </Text>
           </View>
           {/* Habilities habilities*/}
           <View style={styles.margimBottomDiv}>
-            <Text style={styles.title}>Habilidades e Competencias</Text>
+            <Text style={styles.title}>Habilidades e Competências</Text>
             <Text style={styles.description2}>{data.habilities.one}</Text>
             <Text style={styles.description2}>{data.habilities.two}</Text>
             <Text style={styles.description2}>{data.habilities.three}</Text>

@@ -10,13 +10,6 @@ Font.register({ family: 'RobotoBold', src: font1 });
 Font.register({ family: 'RobotoRegular', src: font2 })
 
 const styles = StyleSheet.create({
-
-    /*  pageNumber: {
-         position: "absolute",
-         bottom: pxToPt(30),
-         right: pxToPt(pageHorizontalMargin),
-     }, */
-
     container: {
         display: "flex",
         justifyContent: "center",
@@ -27,7 +20,8 @@ const styles = StyleSheet.create({
 
     mainTitle: {
         fontSize: pxToPt(30),
-        color: "#0db2ff"
+        color: "#0db2ff",
+        marginTop: pxToPt(30)
     },
 
     title: {
