@@ -92,9 +92,9 @@ function Skills() {
           return (
             <div key={index}>
               <Circle
+                animation
                 image={image}
                 text={text}
-                animation
                 onClick={() => showModal(id)}
               />
             </div>

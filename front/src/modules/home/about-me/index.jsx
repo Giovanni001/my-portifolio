@@ -62,16 +62,16 @@ function AboutMe() {
             </div>
             <p className={style.letterText2}>
               Tenho como propósito, ajudar o maior numero de pessoas durante a
-              minha caminhada, deixar o melhor que tenho de mim com elas para
-              que um dia elas se lembrem quem foi Giovanni Manganotti Ribeiro
-              Machado.
+              minha caminhada para o sucesso, deixar o melhor que tenho de mim
+              com elas para que um dia elas se lembrem quem foi Giovanni
+              Manganotti Ribeiro Machado.
             </p>
-            <div className={style.bottomText}>
+            {/* <div className={style.bottomText}>
               <p className={style.bottomTextStyle}>
                 Estou em busca de uma oportunidade, Posso fazer parte do seu
                 time?
               </p>
-            </div>
+            </div> */}
             <div className={style.hireMe}>
               <p className={style.hireMeStyle}>#emBuscaDeNovosDesafios</p>
             </div>
