@@ -14,8 +14,8 @@ function Interests() {
       centerImage: "",
       title: "",
       description:
-        "Sempre tive uma enorme paixão pela área de TI e uma afinidade muito grande.",
-      bottomText: "Tecnologia da Informação",
+        "Sempre tive uma enorme paixão por Marketing Digital e uma afinidade muito grande.",
+      bottomText: "Marketing Digital",
     },
     {
       topImage: Image2,

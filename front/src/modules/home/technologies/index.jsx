@@ -20,7 +20,6 @@ function Technologies() {
   const [selectedSkill, setSelectedSkill] = useState({});
 
   function showModal(id) {
-    console.log("id ", id);
     setSelectedSkill(technologies.find((tech) => tech.id === id));
     setIsModalVisible(true);
   }
