@@ -15,14 +15,14 @@ function Resume() {
       name: "Giovanni Manganotti Ribeiro Machado",
       age: "20",
       professionalObjectives:
-        "Busco enfrentar os mais diversos desafios e crescer com eles, estou sempre em constante aprendizado, procuro sempre dar o meu melhor, ajudando a empresa e os colegas de trabalho.",
+        "Estou em busca de uma posição como Analista de Marketing, para desenvolver as minhas habilidades e coloca-las em prática em prol da empresa.",
       habilities: {
-        one: "Git",
+        one: "Premiere",
         two: "Scrum, Kanban",
-        three: "React, Vue",
+        three: "WordPress",
         four: "Java Script, Html, Css",
-        five: "Azure DevOps",
-        six: "Figma, Miro",
+        five: "Google Analytics",
+        six: "Figma, Miro, Canva, Photoshop",
         seven: "Inglês (Intermediário)",
       },
       contact: {
@@ -30,26 +30,28 @@ function Resume() {
         secondNumber: "Celular Secundário: (11) 93456-4041",
         email: "E-mail: giovannimanganotti001@gmail.com",
         street: "Rua: Sargento Arnaldo Mangile",
-        neighborhood: "Bairro: Jundiaí Mirim",
       },
       professionalHistoric1: {
-        occupation: "Menor Aprendiz (Auxiliar Administrativo)",
+        occupation: "Auxiliar Administrativo",
         companyName:
-          "Emulzint aditivos alimentícios indústria e comercio LTDA ( 2017- 2018)",
+          "FF Higiene Profissional (Ago 2021 até o momento)",
         description:
-          "Atuava na área administrativa, era responsável por gerar relatórios, atualizar planilhas, receber e classificar notas fiscais de produtos, auxiliando na resolução de possíveis dúvidas dos colaboradores da área administrativa e industrial.",
+          "Criação das mídias sociais da empresa do zero '\n'Implementação e Acompanhamento do Google Analytics, Criação e Gerenciamento do Calendário Editorial'\n'Gerenciamento das mídias sociais'\n'Criação e edição de conteúdo para as mídias sociais, usando tecnologias da atualidade como Figma e Adobre Premiere'\n'Implementação do Google Bussiness '\n'Gerenciamento do site da empresa usando WordPress.",
       },
+
       professionalHistoric2: {
         occupation: "Desenvolvedor (Estágio)",
         companyName: "Masti Tecnologia ( 2019- 2020)",
         description:
           "Atuava na área de desenvolvimento de softwares: Tinha como tarefa desenvolver aplicações em geral para empresas de médio/pequeno e grande porte. Organizava reuniões com os colaboradores e auxiliava na realização de testes de qualidade (QA). Desenvolvia relatórios e ajudava na gestão da equipe.",
       },
+
+
       educationHistoric1: {
         institutionName:
           "Faculdade de Tecnologia - Fatec Deputado Ary Fossem Jundiaí",
         description:
-          "Tecnólogo em ADS - Análise e Desenvolvimento de Sistemas - Data: Atualmente cursando",
+          "Tecnólogo em Análise e Desenvolvimento de Sistemas - Data: 2017 - 2021",
       },
       educationHistoric2: {
         institutionName: "Data Company",
