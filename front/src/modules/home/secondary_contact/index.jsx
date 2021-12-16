@@ -20,17 +20,16 @@ function SecundaryContact() {
                 <div className={style.container}>
 
                     <div className={style.icons}>
-                        <div style={{ marginRight: "30px", cursor: "pointer" }}>
-
-                            <a href="https://api.whatsapp.com/send?phone=5511934927114" target="_blank"><Whatsapp /></a>
-
-
-                        </div>
-                        <div style={{ marginRight: "30px", cursor: "pointer" }}>
-                            <Phone />
-                        </div>
                         <div style={{ cursor: "pointer" }}>
-                            <Email />
+                            <a href="https://api.whatsapp.com/send?phone=5511934927114" target="_blank"><Whatsapp /></a>
+                        </div>
+
+                        <div style={{ cursor: "pointer" }}>
+                            <a href="tel:+5511934927114" target="_blank"><Phone /></a>
+                        </div>
+
+                        <div style={{ cursor: "pointer" }}>
+                            <a href="mailto:contato@ffhigiene.com.br" target="_blank"><Email /></a>
                         </div>
                     </div>
                 </div>
