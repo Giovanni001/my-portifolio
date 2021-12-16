@@ -21,8 +21,8 @@ function Home() {
       <Interests />
       <Technologies />
       <Skills />
-     {/*  <Contact /> */}
-     <SecundaryContact />
+      <Contact />
+      <SecundaryContact />
       <Resume />
       <GitHub />
       <Footer />

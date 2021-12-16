@@ -9,7 +9,7 @@ import Data from "../../../images/contact/data.png";
 import { notification } from "antd";
 import style from "./index.module.css";
 
-import { ReactComponent as Email } from "../../../assets/icons/email.svg";
+import { ReactComponent as Email } from "../../../assets/icons/email2.svg";
 import { ReactComponent as Map } from "../../../assets/icons/map.svg";
 import { ReactComponent as Person } from "../../../assets/icons/person.svg";
 
@@ -48,11 +48,10 @@ function Contact() {
 
   const openNotificationWithIcon = (type) => {
     notification[type]({
-      message: `${
-        type === "success"
-          ? "Menssagem enviada com sucesso!"
-          : "Não foi possivel enviar a mensagem!"
-      }`,
+      message: `${type === "success"
+        ? "Menssagem enviada com sucesso!"
+        : "Não foi possivel enviar a mensagem!"
+        }`,
       duration: 6,
     });
   };
@@ -97,7 +96,9 @@ function Contact() {
           <img src={Data} alt="" />
         </div>
       </div>
-      <form onSubmit={(e) => handleEmailSubmit(e)}>
+
+
+      {/* <form onSubmit={(e) => handleEmailSubmit(e)}>
         <div className={style.mainContainer}>
           <div className={style.container}>
             <div className={style.teste}>Me mande uma mensagem :)</div>
@@ -145,7 +146,7 @@ function Contact() {
             </div>
           </div>
         </div>
-      </form>
+      </form> */}
     </div>
   );
 }
