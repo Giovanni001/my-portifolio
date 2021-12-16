@@ -29,7 +29,7 @@ function SecundaryContact() {
                         </div>
 
                         <div style={{ cursor: "pointer" }}>
-                            <a href="mailto:contato@ffhigiene.com.br" target="_blank"><Email /></a>
+                            <a href="mailto:giovannimanganotti001@gmail.com" target="_blank"><Email /></a>
                         </div>
                     </div>
                 </div>
