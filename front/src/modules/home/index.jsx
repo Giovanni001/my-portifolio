@@ -11,6 +11,7 @@ import Technologies from "./technologies";
 import RoundButton from "../../commom-components/button/round-button";
 
 import { ReactComponent as Arrow } from "../../assets/icons/arrow.svg";
+import SecundaryContact from "./secondary_contact";
 
 function Home() {
   return (
@@ -20,7 +21,8 @@ function Home() {
       <Interests />
       <Technologies />
       <Skills />
-      <Contact />
+     {/*  <Contact /> */}
+     <SecundaryContact />
       <Resume />
       <GitHub />
       <Footer />
