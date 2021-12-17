@@ -28,7 +28,7 @@ function AboutMe() {
         </div>
         <div className={style.description}>
           <p className={style.descriptionStyle}>
-            Jovem profissional com uma paixão enorme em aprender coisas novas e
+            Jovem profissional com uma paixão enorme por Marketing e em aprender coisas novas e
             desafiadoras
           </p>
         </div>
@@ -42,9 +42,9 @@ function AboutMe() {
               className={style.data}
             >{`${date} de ${year} - ${hour}:${minute}`}</p>
             <p className={style.letterText1}>
-              Olá, Me chamo Giovanni Manganotti, tenho 20 anos e moro em
-              Jundiaí. Sou um jovem estudante na área de Tecnologia, atualmente
-              cursando Análise e Desenvolvimento de Sistemas na Fatec de
+              Olá, Me chamo Giovanni Manganotti, tenho 21 anos e moro em
+              Jundiaí. Sou um jovem estudante, tentando ingressar na área de Marketing, recentemente
+              graduado em Análise e Desenvolvimento de Sistemas na Fatec de
               Jundiaí. Desde de pequeno sempre fui uma pessoa curiosa, sempre
               buscando aprender coisas novas e desafios contantes.
             </p>
@@ -56,6 +56,19 @@ function AboutMe() {
               me informar. Sempre realizando muito networking com o objetivo de
               fazer novos amigos e aprender coisas novas.
             </p>
+
+            <p className={style.letterTitle}>MEU OBJETIVO PROFISSIONAL</p>
+            <div className={style.hr}>
+              <hr className={style.styleHr} />
+            </div>
+            <p className={style.letterText2}>
+              Estou em busca de uma oportunidade como Analista de Marketing,
+              para poder desenvolver as minhas habilidades na área, usando
+              todo meu conhecimento adquirido como voluntário e da minha
+              graduação em prol da empresa.
+            </p>
+
+
             <p className={style.letterTitle}>MEU PROPÓSITO</p>
             <div className={style.hr}>
               <hr className={style.styleHr} />
@@ -73,7 +86,8 @@ function AboutMe() {
               </p>
             </div> */}
             <div className={style.hireMe}>
-              <p className={style.hireMeStyle}>#emBuscaDeNovosDesafios</p>
+              <p className={style.hireMeStyle}>Estou em busca de uma oportunidade, Posso fazer parte do seu
+                time?</p>
             </div>
           </div>
         </div>

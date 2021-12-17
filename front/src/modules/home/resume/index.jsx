@@ -25,21 +25,23 @@ function Resume() {
         six: "Figma, Miro, Canva, Photoshop",
         seven: "Inglês (Intermediário)",
       },
+
       contact: {
         firstNumber: "Celular: (11) 93492-7114",
         secondNumber: "Celular Secundário: (11) 93456-4041",
         email: "E-mail: giovannimanganotti001@gmail.com",
         street: "Rua: Sargento Arnaldo Mangile",
       },
-      professionalHistoric1: {
+
+      professionalHistoric2: {
         occupation: "Auxiliar Administrativo",
         companyName:
           "FF Higiene Profissional (Ago 2021 até o momento)",
         description:
-          "Criação das mídias sociais da empresa do zero '\n'Implementação e Acompanhamento do Google Analytics, Criação e Gerenciamento do Calendário Editorial'\n'Gerenciamento das mídias sociais'\n'Criação e edição de conteúdo para as mídias sociais, usando tecnologias da atualidade como Figma e Adobre Premiere'\n'Implementação do Google Bussiness '\n'Gerenciamento do site da empresa usando WordPress.",
+          "Criação das mídias sociais da empresa do zero \nImplementação e Acompanhamento do Google Analytics, Criação e Gerenciamento do Calendário Editorial\nGerenciamento das mídias sociais\nCriação e edição de conteúdo para as mídias sociais, usando tecnologias da atualidade como Figma e Adobre Premiere\nImplementação do Google Bussiness \nGerenciamento do site da empresa usando WordPress.",
       },
 
-      professionalHistoric2: {
+      professionalHistoric1: {
         occupation: "Desenvolvedor (Estágio)",
         companyName: "Masti Tecnologia ( 2019- 2020)",
         description:
