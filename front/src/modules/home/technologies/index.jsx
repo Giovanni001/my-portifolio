@@ -53,8 +53,8 @@ function Technologies() {
       id: 0,
       image: PR,
       text: "Premiere",
-      title: "",
-      message: ""
+      title: "Um Editor de Vídeo Incrivel!",
+      message: "Comecei usando o Vegas, mas após descobrir como o Premiere é fantástico, acabei trocando pois é algum programa mais atualizado e que nos oferece mais recursos. Além disso por ser da Adobe possui integração com diversos outros programas facilitando assim uma possível Edição em outros tipos de arquivos ou programas."
     },
 
     {
